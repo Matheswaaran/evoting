@@ -1,4 +1,5 @@
 <?php
+
 	CLASS SessionUtil{
 		function __construct(){
 			session_start();

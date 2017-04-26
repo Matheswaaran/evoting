@@ -17,7 +17,7 @@
 			if ($login_result == 1) {
 				$session = new SessionUtil();
 				$session->VoterLogin($login_array['v_id'],$login_array['username'],$login_array['gvoted'],$login_array['pvoted'],$login_array['approved']);
-				header("location: ../choose_election.html");
+				header("location: ../choose_election.php");
 			}else{
 				echo '<script> alert("Invalid credentials");</script>';
 				echo '<script> window.location="../vlogin.html"; </script>';
