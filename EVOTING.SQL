@@ -29,7 +29,7 @@ USE `evoting`;
 --
 
 CREATE TABLE `goverment_users` (
-  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `gu_id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,

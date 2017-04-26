@@ -4,11 +4,12 @@
 			session_start();
 		}
 
-		public function VoterLogin($id,$username,$gvoted,$pvoted) {
-			$_SESSION['login_id'] = $id;
-			$_SESSION['login_username'] = $username;
-			$_SESSION['gvoted'] = $gvoted;
-			$_SESSION['pvoted'] = $pvoted;
+		public function VoterLogin($id,$username,$gvoted,$pvoted,$approved) {
+			$_SESSION['voter_id'] = $id;
+			$_SESSION['voter_username'] = $username;
+			$_SESSION['voter_gvoted'] = $gvoted;
+			$_SESSION['voter_pvoted'] = $pvoted;
+			$_SESSION['voter_approved'] = $approved;
 		}
 
 		public function Logout() {
