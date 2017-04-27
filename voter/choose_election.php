@@ -1,5 +1,5 @@
 <?php
-  include 'php/includes/session.php';
+  include 'php/includes/vsession.php';
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -30,12 +30,13 @@
     </div>
     <div id="menu">
     	<ul>
-    		<li> <a href="choose_election.html"> |  Home  |</a></li>
-        <li><a href="presidential.php">|  Presidential Elections  |</a></li>
-    		<li><a href="governorship.php">|  Governorship Elections  |</a></li>
-        <li><a href="../contact.php">|  Contact Us  |</a></li>
+    		<li> <a href="choose_election.php"> |  Home  |</a></li>
+        <li><a href="profile.php">|  Profile  |</a></li>
     	</ul>
     </div>
+
+    <?php if ($_SESSION['voter_approved'] == 1) { ?>
+      
     <div id="content">
       <div id="left">
         <p align="right" style="text-align:center; color:#60B7DE;">	<a href="php/vlogout.php">LOGOUT</a></p>
@@ -67,5 +68,25 @@
     	<p>&nbsp;</p>
     	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</p>
     </div>
+
+    <?php }else{ ?>
+    <div id="content">
+      <div id="left">
+        <p align="right" style="text-align:center; color:#60B7DE;"> <a href="php/vlogout.php">LOGOUT</a></p>
+      </div>
+      <th height="41" colspan="2" scope="col">
+        <h1>
+          <strong><center><span class="style2">To Start Voting you must be approved from the Election Commission.</span>
+          </center></strong>
+        </h1>
+      </th>
+      <p>&nbsp;</p>
+    </div>
+    <div id="footer">
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</p>
+    </div>
+    <?php } ?>
   </body>
 </html>

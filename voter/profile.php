@@ -1,9 +1,13 @@
+<?php
+  include 'php/includes/vsession.php';
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>|| VOTING REGISTRATION SYSTEM||</title>
+<title>|| VOTER PROFILE ||</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="../default.css" rel="stylesheet" type="text/css" />
@@ -11,12 +15,12 @@
 <!--
 .style11 {font-size: 18px; font-weight: bold; }
 .style13 {font-size: x-large; font-weight: bold; color: #000000; }
-.style2 {	color: #FF00FF;
-	font-weight: bold;
+.style2 { color: #FF00FF;
+  font-weight: bold;
 }
 .style3 {
-	font-size: 18px;
-	color: #000000;
+  font-size: 18px;
+  color: #000000;
 }
 .style4 {font-size: 18px; color: #FFFFFF; }
 .style5 {font-size: 12px}
@@ -32,16 +36,13 @@
   </table>
 </div>
 <div id="menu">
-	<ul>
-		<li><a href="../index.html"> |  Home  |</a></li>
-    <li><a href="vlogin.html" >|  Voter Login  |</a></li>
-    <li><a href="vregistration.html" >|  Voter Registration  |</a></li>
-    <li><a href="../election/elogin.html" >|  Election Login  |</a></li>
-    <li><a href="contact.html">|  Contact Us  |</a></li>
-	</ul>
+  <ul>
+    <li> <a href="choose_election.php"> |  Home  |</a></li>
+    <li><a href="profile.php">|  Profile  |</a></li>
+  </ul>
 </div>
 <div id="content">
-	<div id="left">
+  <div id="left">
     <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">
     THIS E-VOTING SYSTEMIS FOR ELEGIBLE INDIAN WHO ARE ABOVE 18 YEARS OF AGE AS FROM 23RD JUNE 2017
     </marquee></strong></p>
@@ -50,7 +51,7 @@
    </center>
    
    </h1></th>
-	</div>
+  </div>
 </div>
 <div id="footer">
   <table width="651" border="0" align="center">
@@ -58,94 +59,76 @@
       <th width="645" height="783" scope="col">
         <table width="667" height="31" border="0" align="center" bgcolor="#00FF00">
           <tr>
-            <th width="607" scope="col"><div align="center"><span class="style4">VOTER REGISTRATION FORM </span></div></th>
+            <th width="607" scope="col"><div align="center"><span class="style4"><?php echo $user_array['username']; ?> PROFILE </span></div></th>
           </tr>
         </table>
           <form action="php/vregister.php" method="post" id="form1">
             <table width="431" border="0" align="center" cellpadding="3" cellspacing="17">
               <tr>
                 <th width="122" scope="col"><div align="justify">FIRSTNAME</div></th>
-                <th width="246" scope="col"><div align="justify"><input type="text" name="txtfirstname" id="txtfirstname"/></div></th>
+                <th width="246" scope="col"><div align="justify"><?php echo $user_array['firstname']; ?></div></th>
               </tr>
               <tr>
                 <td><div align="justify">LASTNAME</div></td>
-                <td><div align="justify"><input type="text" name="txtlastname" id="txtlastname" /></div></td>
+                <td><div align="justify"><?php echo $user_array['lastname']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">SEX</div></td>
-                <td><div align="justify">
-                  <label>
-                    <select name="txtsex" id="txtsex">
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
-                      <option value="Others">Others</option>
-                    </select>
-                  </label>
-                </div></td>
+                <td><div align="justify"><?php echo $user_array['sex']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">AGE</div></td>
-                <td><div align="justify"><input type="text" name="txtage" id="txtage" /></div></td>
+                <td><div align="justify"><?php echo $user_array['age']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">ADDRESS Line 1</div></td>
-                <td><div align="justify"><input type="text" name="txtaddress1" id="txtaddress1"/></div></td>
+                <td><div align="justify"><?php echo $user_array['address1']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">ADDRESS Line 2</div></td>
-                <td><div align="justify"><input type="text" name="txtaddress2" id="txtaddress2"/></div></td>
+                <td><div align="justify"><?php echo $user_array['address2']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">STATE</div></td>
-                <td><div align="justify"><input type="text" name="txtstate" id="txtstate" /></div></td>
+                <td><div align="justify"><?php echo $user_array['state']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">COUNTRY</div></td>
-                <td><div align="justify"><input type="text" name="txtcountry" id="txtcountry" /></div></td>
+                <td><div align="justify"><?php echo $user_array['country']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">PHONE</div></td>
-                <td><div align="justify"><input type="text" name="txtphone" id="txtphone" /></div></td>
+                <td><div align="justify"><?php echo $user_array['phone']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">E-MAIL</div></td>
-                <td><div align="justify"><input type="text" name="txtemail" id="txtemail" /></div></td>
+                <td><div align="justify"><?php echo $user_array['email']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">PREFERED ELECTION DISTRICT </div></td>
-                <td><div align="justify"><input type="text" name="txtelectiondist" id="txtelectiondist" /></div></td>
+                <td><div align="justify"><?php echo $user_array['election_district']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">ELECTION - ID </div></td>
-                <td><div align="justify"><input type="text" name="txtelectionid" id="txtelectionid" /></div></td>
+                <td><div align="justify"><?php echo $user_array['election_id']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">OCCUPATION</div></td>
-                <td><div align="justify"><input type="text" name="txtoccupation" id="txtoccupation" /></div></td>
+                <td><div align="justify"><?php echo $user_array['occupation']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">USERNAME</div></td>
-                <td><div align="justify"><input type="text" name="txtusername" id="txtusername" /></div></td>
+                <td><div align="justify"><?php echo $user_array['username']; ?></div></td>
               </tr>
               <tr>
                 <td><div align="justify">PASSWORD</div></td>
-                <td><div align="justify"><input type="password" name="txtpassword" id="txtpassword" /></div></td>
-              </tr>
-              <tr>
-                <td><div align="justify">Retype - PASSWORD</div></td>
-                <td><div align="justify"><input type="password" name="txtrepassword" id="txtrepassword" /></div></td>
-              </tr>
-              <tr>
-                <td><input type="submit" name="Submit" value="Register" /></td>
-                <td>&nbsp;</td>
+                <td><div align="justify"><a href="changepass.php">CHANGE PASSWORD</a></div></td>
               </tr>
             </table>
           </form></th>
     </tr>
   </table>
-  <p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
+  <p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
 </div>
 </body>
 </html>

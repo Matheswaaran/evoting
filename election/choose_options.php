@@ -1,8 +1,12 @@
+<?php
+  include 'php/includes/esession.php';
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>|| CHOOSE ELECTION SYSTEM ||</title>
+    <title>|| ELECTION COMMISSION HOME ||</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link href="../default.css" rel="stylesheet" type="text/css" />
@@ -26,11 +30,11 @@
     </div>
     <div id="menu">
     	<ul>
-    		<li> <a href="index.php"> |  Home  |</a></li>
-    		<li><a href="login.php">|  Voting  |</a></li>
-        <li><a href="registration.php">|  Registration  |</a></li>
-    		<li><a href="login.php" >|  Login  |</a></li>
-        <li><a href="contact.php">|  Contact Us  |</a></li>
+    		<li> <a href="choose_options.php"> |  Home  |</a></li>
+    		<li><a href="create_can.php">|  CREATE CANDIDATE  |</a></li>
+        <li><a href="view_can.php">|  VIEW CANDIDATES  |</a></li>
+    		<li><a href="approve.php" >|  APPROVE VOTERS  |</a></li>
+        <li><a href="../contact.html">|  Contact Us  |</a></li>
     	</ul>
     </div>
     <div id="content">
@@ -38,7 +42,7 @@
         <p align="right" style="text-align:center; color:#60B7DE;">	<a href="php/elogout.php">LOGOUT</a></p>
     </div>
        <th height="41" colspan="2" scope="col"><h1><center>
-            <span class="style2">To Start Voting you must choose the Type of Election to start with</span>
+            <span class="style2">To Start Voting you must choose one of the following to start with</span>
        </center></strong></h1></th>
     	<p>&nbsp;</p>
     </div>
@@ -46,24 +50,18 @@
     <div id="footer">
       <table width="463" align="center">
         <tr>
-          <td width="455" height="61"><form id="form1" method="post" action="">
+          <td width="455" height="61">
             <table width="459" height="103" align="center">
               <tr>
-                <td width="305" height="55"><div align="center" class="style8">PRESIDENTIAL ELECTIONS </div></td>
-                <td width="142"><label>
-                  <div align="center">
-                    <input type="submit" name="Submit" value="PRESIDENTIAL" />
-                    </div>
-                </label></td>
+                <td width="305" height="55"><div align="center" class="style8"><a href="create_can.php">CREATE CANDIDATE</a></div></td>
               </tr>
               <tr>
-                <td height="40"><div align="center" class="style8">GOVERNORSHIP ELECTIONS </div></td>
-                <td><div align="center">
-                  <input type="submit" name="Submit2" value="GOVERNORSHIP" />
-                </div></td>
+                <td height="40"><div align="center" class="style8"><a href="view_can.php">VIEW CANDIDATES</a></div></td>
+              </tr>
+              <tr>
+                <td height="40"><div align="center" class="style8"><a href="approve.php">APPROVE VOTERS</a></div></td>
               </tr>
             </table>
-                </form>
           </td>
         </tr>
       </table>

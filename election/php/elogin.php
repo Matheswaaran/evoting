@@ -17,7 +17,7 @@
 			if ($login_result == 1) {
 				$session = new SessionUtil();
 				$session->ElectionLogin($login_array['gu_id'],$login_array['username'],$login_array['email']);
-				header("location: ../choose_options.html");
+				header("location: ../choose_options.php");
 			}else{
 				echo '<script> alert("Invalid credentials");</script>';
 				echo '<script> window.location="../elogin.html"; </script>';

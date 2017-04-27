@@ -21,7 +21,7 @@
 		$repassword = $_POST['txtrepassword'];
 
 		$reg_check_sql = mysqli_query($con, "SELECT v_id FROM voter WHERE username = '$username'");
-		$reg_check_result = mysqli_fetch_row($reg_check_sql);
+		$reg_check_result = mysqli_num_rows($reg_check_sql);
 
 		if ($reg_check_result == 1) {
 			echo '<script> alert("Username already available");</script>';
