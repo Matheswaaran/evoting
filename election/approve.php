@@ -69,8 +69,10 @@
             <th width="607" scope="col"><div align="center"><span class="style4">PENDING LIST OF VOTERS</span></div></th>
           </tr>
         </table>
+          <form action="php/approve_voter.php" method="post" >
             <table width="531" border="0" align="center" cellpadding="3" cellspacing="17">
               <tr>
+                <th width="246" scope="col"><div align="justify">Select</div></th>
                 <th width="246" scope="col"><div align="justify">Name</div></th>
                 <th width="122" scope="col"><div align="justify">Age</div></th>
                 <th width="246" scope="col"><div align="justify">Address</div></th>
@@ -81,11 +83,12 @@
                 <th width="246" scope="col"><div align="justify">Election-ID</div></th>
                 <th width="246" scope="col"><div align="justify">Occupation</div></th>
               </tr>
-              <?php while ($govr_array = mysqli_fetch_array($voter_list)) { ?>
+              <?php $i = 1; while ($voter_array = mysqli_fetch_array($voter_list)) { ?>
               <tr>
-                <td><div align="justify"><?php echo $voter_array['firstname'] . $voter_array['lastname']; ?></div></td>
+                <td><div align="justify"><input type="checkbox" name="<?php echo $check[$i]; ?>" value="<?php echo $voter_array['vid']?>"></div></td>
+                <td><div align="justify"><?php echo $voter_array['firstname'] . " " . $voter_array['lastname']; ?></div></td>
                 <td><div align="justify"><?php echo $voter_array['age']; ?></div></td>
-                <td><div align="justify"><?php echo $voter_array['address1'] . $voter_array['address2']; ?></div></td>
+                <td><div align="justify"><?php echo $voter_array['address1'] . " " . $voter_array['address2']; ?></div></td>
                 <td><div align="justify"><?php echo $voter_array['state']; ?></div></td>
                 <td><div align="justify"><?php echo $voter_array['country']; ?></div></td>
                 <td><div align="justify"><?php echo $voter_array['phone']; ?></div></td>
@@ -94,10 +97,12 @@
                 <td><div align="justify"><?php echo $voter_array['occupation']; ?></div></td>
               </tr>
               <?php } ?>
+              <tr>
+                <td></td>
+              </tr>
             </table>
-            </th>
-    </tr>
-  </table>
+            <div align="justify"><input type="submit" name="approve" value="approve"></div>
+          </form>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
