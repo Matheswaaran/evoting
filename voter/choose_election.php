@@ -69,7 +69,7 @@
     	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</p>
     </div>
 
-    <?php }else{ ?>
+    <?php }elseif ($_SESSION['voter_approved'] == 1) {?>
     <div id="content">
       <div id="left">
         <p align="right" style="text-align:center; color:#60B7DE;"> <a href="php/vlogout.php">LOGOUT</a></p>
