@@ -64,7 +64,7 @@
 </div>
 <div id="footer">
   <p><a href="php/vlogout.php">LOGOUT</a></p>
-          <form action="php/vregister.php" method="post" id="form1">
+          <form action="php/gvote.php" method="post" id="form1">
             <table width="671" border="0" align="center">
                 <tr>
                   <th width="233" bgcolor="#00FF66" scope="col" align="center"><span class="style8">VOTE</span></th>
@@ -73,7 +73,7 @@
                 </tr>
                 <?php while ($govr_array = mysqli_fetch_array($govr_list)) {?>
                 <tr>
-                  <td height="151"><input type="radio" name="vote" value="<?php echo $govr_array['gc_id'] ?>"></td>
+                  <td height="151"><input type="radio" id="vote" name="vote" value="<?php echo $govr_array['gc_id'] ?>"></td>
                   <td><?php echo $govr_array['cand_name']; ?></td>
                   <td><?php echo $govr_array['party']; ?></td>
                 </tr>
