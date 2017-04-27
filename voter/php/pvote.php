@@ -4,6 +4,7 @@
 	session_start();
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$id = $_POST['vote'];
+		echo $id;
 		$pc_list = mysqli_query($con,"SELECT * FROM presidential_candidates WHERE pc_id = $id");
 		$pc_array = mysqli_fetch_array($pc_list);
 		if ($pc_list) {

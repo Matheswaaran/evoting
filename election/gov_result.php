@@ -6,7 +6,7 @@
 <title>|| VOTING REGISTRATION SYSTEM||</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="default.css" rel="stylesheet" type="text/css" />
+<link href="../default.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
 .style1 {
@@ -21,7 +21,7 @@
 <div id="header">
   <table width="200" align="center">
     <tr>
-      <td height="212"><img src="images/header1.jpg" alt="" width="770" height="210" /></td>
+      <td height="212"><img src="../images/header1.jpg" alt="" width="770" height="210" /></td>
     </tr>
   </table>
 </div>
