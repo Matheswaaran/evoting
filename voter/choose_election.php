@@ -66,10 +66,10 @@
       </table>
       <p>&nbsp;</p>
     	<p>&nbsp;</p>
-    	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</p>
+        <p align="center">Copyright &copy; 2017 Designed by "Matheswaaran FOR PI(People with Innovations) Ltd" FOR 9025923103</p>
     </div>
 
-    <?php }elseif ($_SESSION['voter_approved'] == 1) {?>
+    <?php }elseif ($_SESSION['voter_approved'] == 0) {?>
     <div id="content">
       <div id="left">
         <p align="right" style="text-align:center; color:#60B7DE;"> <a href="php/vlogout.php">LOGOUT</a></p>
@@ -85,7 +85,7 @@
     <div id="footer">
       <p>&nbsp;</p>
       <p>&nbsp;</p>
-      <p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</p>
+        <p align="center">Copyright &copy; 2017 Designed by "Matheswaaran FOR PI(People with Innovations) Ltd" FOR 9025923103</p>
     </div>
     <?php } ?>
   </body>

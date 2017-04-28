@@ -79,10 +79,10 @@
                 <td><div align="justify">Party</div></td>
                 <td><div align="justify"><label>
                     <select name="party" id="party">
-                      <option value="AIADMK">AIADMK</option>
-                      <option value="DMK">DMK</option>
-                      <option value="MDMK">MDMK</option>
-                      <option value="DMDK">DMDK</option>
+                      <option value="All India Anna Dravida Munnetra Kalagam (AIADMK)">All India Anna Dravida Munnetra Kalagam (AIADMK)</option>
+                      <option value="Dravida Munnetra Kalagam (DMK)">Dravida Munnetra Kalagam (DMK)</option>
+                      <option value="Marumalarchi Dravida Munnetra Kazhagam (MDMK)">Marumalarchi Dravida Munnetra Kazhagam (MDMK)</option>
+                      <option value="Desiya Murpokku Dravida Kazhagam (DMDK)">Desiya Murpokku Dravida Kazhagam (DMDK)</option>
                     </select>
                   </label></div></td>
               </tr>
@@ -113,10 +113,10 @@
               <td><div align="justify">Party</div></td>
               <td><div align="justify"><label>
                     <select name="party" id="party">
-                      <option value="AIADMK">AIADMK</option>
-                      <option value="DMK">DMK</option>
-                      <option value="MDMK">MDMK</option>
-                      <option value="DMDK">DMDK</option>
+                      <option value="All India Anna Dravida Munnetra Kalagam (AIADMK)">All India Anna Dravida Munnetra Kalagam (AIADMK)</option>
+                      <option value="Dravida Munnetra Kalagam (DMK)">Dravida Munnetra Kalagam (DMK)</option>
+                      <option value="Marumalarchi Dravida Munnetra Kazhagam (MDMK)">Marumalarchi Dravida Munnetra Kazhagam (MDMK)</option>
+                      <option value="Desiya Murpokku Dravida Kazhagam (DMDK)">Desiya Murpokku Dravida Kazhagam (DMDK)</option>
                     </select>
                   </label></div></td>
             </tr>            
@@ -130,7 +130,7 @@
     </table>
   <p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
+        <p align="center">Copyright &copy; 2017 Designed by "Matheswaaran FOR PI(People with Innovations) Ltd" FOR 9025923103</p>
 </div>
 </body>
 </html>

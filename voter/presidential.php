@@ -63,12 +63,13 @@
           <tr>
             <th width="33" bgcolor="#00FF66" scope="col" align="center"><span class="style8">VOTE</span></th>
             <th width="197" bgcolor="#00FF66" scope="col" align="center"><span class="style8">IMAGE</span></th>
-            <th width="149" bgcolor="#00FF66" scope="col" align="center"><span class="style8">PARTY</span></th>
+            <th width="149" bgcolor="#00FF66" scope="col" align="center"><span class="style8">CANDIDATE NAME</span></th>
             <th width="149" bgcolor="#00FF66" scope="col" align="center"><span class="style8">PARTY</span></th>
           </tr>
           <?php while ($pres_array = mysqli_fetch_array($pres_list)) {?>
           <tr>
             <td height="151"><input type="radio" id="vote" name="vote" value="<?php echo $pres_array['pc_id'] ?>"></td>
+            <td ><img src="<?= image($pres_array['party']); ?>"></td>
             <td><?php echo $pres_array['cand_name']; ?></td>
             <td><?php echo $pres_array['party']; ?></td>
           </tr>
@@ -79,7 +80,7 @@
         </table>
       </form>
       <p>&nbsp;</p>
-      <p align="center">Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
+        <p align="center">Copyright &copy; 2017 Designed by "Matheswaaran FOR PI(People with Innovations) Ltd" FOR 9025923103</p>
     </div>
     <?php }elseif ($_SESSION['voter_pvoted'] == 1) { ?>
       <div id="content">

@@ -119,7 +119,7 @@
   </table>
   <p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
+        <p align="center">Copyright &copy; 2017 Designed by "Matheswaaran FOR PI(People with Innovations) Ltd" FOR 9025923103</p>
 </div>
 </body>
 </html>

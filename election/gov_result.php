@@ -1,9 +1,14 @@
+<?php
+  include 'php/includes/esession.php';
+  include 'php/eresult.php';
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>|| VOTING REGISTRATION SYSTEM||</title>
+<title>|| GOVERNORSHIP RESULT ||</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="../default.css" rel="stylesheet" type="text/css" />
@@ -38,7 +43,7 @@
 <div id="content">
 	<div id="left">
     <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">
-    THIS E-VOTING SYSTEM IS FOR ELEGIBLE NIGERIAN WHO ARE ABOVE 18 YEARS OF AGE AS FROM 23RD JUNE 2012 
+    THIS E-VOTING SYSTEM IS FOR ELEGIBLE INDIAN WHO ARE ABOVE 18 YEARS OF AGE AS FROM 23RD JUNE 2017
     </marquee></strong></p>
 </div>
   <th height="41" colspan="2" scope="col"><h1><center>
@@ -48,30 +53,23 @@
 </div>
 </div>
 <div id="footer">
-  <p class="style1"><a href="logout.php">LOGOUT</a></p>
+  <p class="style1"><a href="php/elogout.php">LOGOUT</a></p>
   <p class="style1">UPDATED GOVERNORSHIP RESULT  </p>
   <table width="743" height="93" border="1" align="center" cellpadding="7" cellspacing="0" bgcolor="#999999">
     <tr>
-      <th width="263" height="56" scope="col" >CANDIDATE NAME </th>
-      <th width="215" scope="col" >PARTY</th>
-      <th width="215" scope="col" >VOTES</th>
+      <th width="263" height="56" scope="col" align="center">CANDIDATE NAME </th>
+      <th width="215" scope="col" align="center" >PARTY</th>
+      <th width="215" scope="col" align="center">VOTES</th>
     </tr>
-    <?php 
- $row = get_gov_vote();
- foreach($row as $col_val){
-  $sno++;
- if(($sno%2)==0)$format="background-color:#cccccc";
- else $format="background-color:#00FF66";
- 
-?>
+    <?php while ($gvote_array = mysqli_fetch_array($gvote_sql)) { ?>
     <tr>
-      <td  style="<?php echo $format; ?>"><?php echo $col_val['cand_name'] ?></td>
-      <td  style="<?php echo $format; ?>"><?php echo $col_val['party'] ; ?></td>
-      <td  style="<?php echo $format; ?>"><?php echo $col_val['gov_count'] ; ?> </td>
+      <td  style=""><?php echo $gvote_array['cand_name']; ?></td>
+      <td  style=""><?php echo $gvote_array['party']; ?></td>
+      <td  style=""><?php echo $gvote_array['votes']; ?> </td>
     </tr>
-    <?php  } ?>
+    <?php } ?>
   </table>
-  <p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
+        <p align="center">Copyright &copy; 2017 Designed by "Matheswaaran FOR PI(People with Innovations) Ltd" FOR 9025923103</p>
 </div>
 </body>
 </html>

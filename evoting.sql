@@ -52,8 +52,8 @@ INSERT INTO `goverment_users` (`gu_id`, `name`, `email`, `username`, `password`,
 
 CREATE TABLE `governorship_candidates` (
   `gc_id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `cand_name` varchar(22) NOT NULL,
-  `party` varchar(22) NOT NULL,
+  `cand_name` varchar(50) NOT NULL,
+  `party` varchar(100) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -65,9 +65,9 @@ CREATE TABLE `governorship_candidates` (
 
 CREATE TABLE `governorship_votes` (
   `gv_id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `cand_name` varchar(22) NOT NULL,
-  `party` varchar(22) NOT NULL,
-  `v_id` varchar(20) NOT NULL,
+  `cand_name` varchar(50) NOT NULL,
+  `party` varchar(100) NOT NULL,
+  `v_id` int(11) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -79,9 +79,9 @@ CREATE TABLE `governorship_votes` (
 
 CREATE TABLE `presidential_votes` (
   `pv_id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `cand_name` varchar(29) NOT NULL,
-  `party` varchar(6) NOT NULL,
-  `v_id` varchar(19) NOT NULL,
+  `cand_name` varchar(50) NOT NULL,
+  `party` varchar(100) NOT NULL,
+  `v_id` int(11) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -93,8 +93,8 @@ CREATE TABLE `presidential_votes` (
 
 CREATE TABLE `presidential_candidates` (
   `pc_id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `cand_name` varchar(29) NOT NULL,
-  `party` varchar(6) NOT NULL,
+  `cand_name` varchar(50) NOT NULL,
+  `party` varchar(100) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
