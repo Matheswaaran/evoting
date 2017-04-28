@@ -38,11 +38,12 @@
 </div>
 <div id="menu">
 	<ul>
-		<li> <a href="choose_options.php"> |  Home  |</a></li>
-    <li><a href="create_can.php">|  CREATE CANDIDATE  |</a></li>
+    <li> <a href="choose_options.php"> | Home |</a></li>
+    <li><a href="create_can.php">| CREATE CANDIDATE |</a></li>
     <li><a href="view_can.php">|  VIEW CANDIDATES  |</a></li>
     <li><a href="approve.php" >|  APPROVE VOTERS  |</a></li>
-    <li><a href="../contact.html">|  Contact Us  |</a></li>
+    <li><a href="gov_result.php" >|  GOV RESULTS  |</a></li>
+    <li><a href="pres_result.php" >|  PR RESULTS  |</a></li>
 	</ul>
 </div>
 <div id="content">
@@ -63,7 +64,7 @@
 <div id="footer">
   <table width="651" border="0" align="center">
     <tr>
-      <th width="645" height="683" scope="col">
+      <th width="645" height="283" scope="col">
         <table width="667" height="31" border="0" align="center" bgcolor="#00FF00">
           <tr>
             <th width="607" scope="col"><div align="center"><span class="style4">GOVERNORSHIP CANDIDATE LIST </span></div></th>

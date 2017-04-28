@@ -132,7 +132,7 @@ CREATE TABLE `voter` (
 --
 
 INSERT INTO `voter` (`v_id`, `firstname`, `lastname`, `sex`, `age`, `address1`, `address2`, `state`, `country`, `phone`, `email`, `election_district`, `election_id`, `occupation`, `username`, `password`, `gvoted`, `pvoted`, `approved`, `created`) VALUES
-(1, 'Rockin', 'MAT', 'Male', 21, 'asdfghg', ';lkjhj', 'TN', 'India', 9025923103, 'mat@mat.com', 'mdu', 123456789, 'Student', 'mat', '123', 0, 0, 1, '2017-04-26 15:21:34'),
-(2, 'Rockin', 'MAT', 'Male', 21, '123456789', '123456789', 'TN', 'India', 9025923103, 'rockin#mat.com', 'mdu', 123456789, 'teacher', 'rockin', '123', 0, 0, 1, '2017-04-27 03:43:47');
+(1, 'Rockin', 'MAT', 'Male', 21, 'asdfghg', ';lkjhj', 'TN', 'India', 9025923103, 'mat@mat.com', 'mdu', 123456789, 'Student', 'mat', '123', 1, 1, 1, '2017-04-26 15:21:34'),
+(2, 'Rockin', 'MAT', 'Male', 21, '123456789', '123456789', 'TN', 'India', 9025923103, 'rockin#mat.com', 'mdu', 123456789, 'teacher', 'rockin', '123', 1, 1, 1, '2017-04-27 03:43:47');
 
 -- --------------------------------------------------------

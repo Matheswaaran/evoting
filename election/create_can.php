@@ -37,11 +37,12 @@
 </div>
 <div id="menu">
 	<ul>
-		<li> <a href="choose_options.php"> |  Home  |</a></li>
-    <li><a href="create_can.php">|  CREATE CANDIDATE  |</a></li>
-    <li><a href="view_can.php">|  VIEW CANDIDATES  |</a></li>
-    <li><a href="approve.php" >|  APPROVE VOTERS  |</a></li>
-    <li><a href="../contact.html">|  Contact Us  |</a></li>
+      <li> <a href="choose_options.php"> | Home |</a></li>
+      <li><a href="create_can.php">| CREATE CANDIDATE |</a></li>
+      <li><a href="view_can.php">|  VIEW CANDIDATES  |</a></li>
+      <li><a href="approve.php" >|  APPROVE VOTERS  |</a></li>
+      <li><a href="gov_result.php" >|  GOV RESULTS  |</a></li>
+      <li><a href="pres_result.php" >|  PR RESULTS  |</a></li>
 	</ul>
 </div>
 <div id="content">
@@ -76,7 +77,14 @@
               </tr>
               <tr>
                 <td><div align="justify">Party</div></td>
-                <td><div align="justify"><input type="text" name="party" id="party" /></div></td>
+                <td><div align="justify"><label>
+                    <select name="party" id="party">
+                      <option value="AIADMK">AIADMK</option>
+                      <option value="DMK">DMK</option>
+                      <option value="MDMK">MDMK</option>
+                      <option value="DMDK">DMDK</option>
+                    </select>
+                  </label></div></td>
               </tr>
               <tr>
                 <td><input type="submit" name="Submit" value="Register" /></td>
@@ -103,7 +111,14 @@
             </tr>
             <tr>
               <td><div align="justify">Party</div></td>
-              <td><div align="justify"><input type="text" name="party" id="party" /></div></td>
+              <td><div align="justify"><label>
+                    <select name="party" id="party">
+                      <option value="AIADMK">AIADMK</option>
+                      <option value="DMK">DMK</option>
+                      <option value="MDMK">MDMK</option>
+                      <option value="DMDK">DMDK</option>
+                    </select>
+                  </label></div></td>
             </tr>            
             <tr>
               <td><input type="submit" name="Submit" value="Register" /></td>

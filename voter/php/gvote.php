@@ -13,7 +13,7 @@
 				$update_voted = mysqli_query($con,"UPDATE voter SET gvoted = 1 WHERE v_id = '" . $_SESSION["voter_id"] . "' AND username = '" . $_SESSION["voter_username"] . "'");
 				if ($update_voted) {
 					echo '<script> alert("Your Vote has been recorded");</script>';
-					echo '<script> window.location="../choose_election.php"; </script>';
+					echo '<script> window.location="vlogout.php"; </script>';
 				}
 			}
 		}

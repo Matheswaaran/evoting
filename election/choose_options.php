@@ -35,8 +35,7 @@
         <li><a href="view_can.php">|  VIEW CANDIDATES  |</a></li>
         <li><a href="approve.php" >|  APPROVE VOTERS  |</a></li>
         <li><a href="gov_result.php" >|  GOV RESULTS  |</a></li>
-    		<li><a href="pres_result.php" >|  PR RESULTS  |</a></li>
-        <!-- <li><a href="../contact.html">|  Contact Us  |</a></li> -->
+        <li><a href="pres_result.php" >|  PR RESULTS  |</a></li>
     	</ul>
     </div>
     <div id="content">

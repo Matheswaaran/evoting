@@ -8,7 +8,7 @@
 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>|| VIEW CANDIDATES ||</title>
+<title>|| VOTERS APPROVAL ||</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="../default.css" rel="stylesheet" type="text/css" />
@@ -38,11 +38,12 @@
 </div>
 <div id="menu">
   <ul>
-    <li> <a href="choose_options.php"> |  Home  |</a></li>
-    <li><a href="create_can.php">|  CREATE CANDIDATE  |</a></li>
+    <li> <a href="choose_options.php"> | Home |</a></li>
+    <li><a href="create_can.php">| CREATE CANDIDATE |</a></li>
     <li><a href="view_can.php">|  VIEW CANDIDATES  |</a></li>
     <li><a href="approve.php" >|  APPROVE VOTERS  |</a></li>
-    <li><a href="../contact.html">|  Contact Us  |</a></li>
+    <li><a href="gov_result.php" >|  GOV RESULTS  |</a></li>
+    <li><a href="pres_result.php" >|  PR RESULTS  |</a></li>
   </ul>
 </div>
 <div id="content">
@@ -85,7 +86,7 @@
               </tr>
               <?php $i = 1; while ($voter_array = mysqli_fetch_array($voter_list)) { ?>
               <tr>
-                <td><div align="justify"><input type="checkbox" name="<?php echo $check[$i]; ?>" value="<?php echo $voter_array['vid']?>"></div></td>
+                <td><div align="justify"><input type="checkbox" name="check[<?php $i ?>]" value="<?php echo $voter_array['v_id']?>"></div></td>
                 <td><div align="justify"><?php echo $voter_array['firstname'] . " " . $voter_array['lastname']; ?></div></td>
                 <td><div align="justify"><?php echo $voter_array['age']; ?></div></td>
                 <td><div align="justify"><?php echo $voter_array['address1'] . " " . $voter_array['address2']; ?></div></td>
